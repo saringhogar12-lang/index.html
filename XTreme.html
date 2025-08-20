@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xtreme Fitness Charan</title>
+  <style>
+    /* --- Global Styles --- */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background-color: #111;
+    }
+    a { text-decoration: none; color: inherit; }
+    h1, h2, h3 { margin: 0 0 15px; }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+
+    /* --- Navigation --- */
+    header {
+      background: #000;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 { color: #e60000; font-size: 24px; }
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav a:hover { color: #e60000; }
+
+    /* --- Hero --- */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1571019613914-85f342c1d4b1?auto=format&fit=crop&w=1350&q=80') 
+                  no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      background: #e60000;
+      padding: 12px 25px;
+      color: #fff;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btn:hover { background: #ff1a1a; }
+
+    /* --- About --- */
+    .about {
+      background: #222;
+      text-align: center;
+      border-radius: 8px;
+      padding: 40px;
+    }
+
+    /* --- Classes --- */
+    .classes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .class-card {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* --- Pricing --- */
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .price-card {
+      background: #222;
+      padding: 25px;
+      border-radius: 8px;
+      width: 280px;
+      text-align: center;
+    }
+    .price-card h3 { color: #e60000; }
+    .price-card .btn { margin-top: 15px; display: inline-block; }
+
+    /* --- Testimonials --- */
+    .testimonials {
+      background: #222;
+      border-radius: 8px;
+      padding: 30px;
+      font-style: italic;
+    }
+
+    /* --- Contact --- */
+    .contact {
+      text-align: center;
+    }
+    .contact iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 15px;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1>Xtreme Fitness</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#classes">Classes</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Train Hard. Stay Strong.</h2>
+    <p>Bangkok’s Premier Gym with World-Class American Equipment</p>
+    <a href="#contact" class="btn">Start Your Free Trial</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Xtreme Fitness and Wellness Center brings you world-class gym facilities, imported American equipment, 
+       and professional trainers dedicated to your success.</p>
+  </section>
+
+  <!-- Classes -->
+  <section id="classes">
+    <h2>Our Classes</h2>
+    <div class="classes">
+      <div class="class-card"><h3>Yoga</h3><p>Find balance and flexibility with expert-led yoga sessions.</p></div>
+      <div class="class-card"><h3>Zumba</h3><p>High-energy dance workouts to keep you moving and sweating.</p></div>
+      <div class="class-card"><h3>Kickboxing</h3><p>Boost strength and endurance with combat-style training.</p></div>
+      <div class="class-card"><h3>ABS & Core</h3><p>Targeted exercises to sculpt your midsection and build strength.</p></div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Membership Plans</h2>
+    <div class="pricing">
+      <div class="price-card">
+        <h3>Basic Plan</h3>
+        <p>฿1,200 / month</p>
+        <p>Full gym access</p>
+        <a href="#contact" class="btn">Join Now</a>
+      </div>
+      <div class="price-card">
+        <h3>Premium Plan</h3>
+        <p>฿2,000 / month</p>
+        <p>Gym + unlimited classes</p>
+        <a href="#contact" class="btn">Join Now</a>
+      </div>
+      <div class="price-card">
+        <h3>Personal Training</h3>
+        <p>Custom rates</p>
+        <p>1-on-1 coaching with expert trainers</p>
+        <a href="#contact" class="btn">Book Trainer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <h2>What Our Members Say</h2>
+    <div class="testimonials">
+      <p>"First class gym… excellent facilities."</p>
+      <p>"One of the finest gyms in Bangkok with the latest equipment and trainers always available."</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>1538 Soi Charan Sanitwong 13, Wat Tha Phra, Bangkok Yai, Bangkok 10600</p>
+    <p>Phone: +66 (example)</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7225362773957!2d100.4780572!3d13.731288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e298c2ddf18f25%3A0x8f1c339e9d2d2c!2sCharan%20Sanitwong%2013!5e0!3m2!1sen!2sth!4v1692919389930"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Xtreme Fitness Charan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
